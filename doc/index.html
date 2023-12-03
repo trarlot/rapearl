@@ -1,0 +1,1982 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset='utf-8'>
+  <title>rapearl 1.0.0 | Documentation</title>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <link href='assets/bass.css' rel='stylesheet'>
+  <link href='assets/style.css' rel='stylesheet'>
+  <link href='assets/github.css' rel='stylesheet'>
+  <link href='assets/split.css' rel='stylesheet'>
+</head>
+<body class='documentation m0'>
+    <div class='flex'>
+      <div id='split-left' class='overflow-auto fs0 height-viewport-100'>
+        <div class='py1 px2'>
+          <h3 class='mb0 no-anchor'>rapearl</h3>
+          <div class='mb1'><code>1.0.0</code></div>
+          <input
+            placeholder='Filter'
+            id='filter-input'
+            class='col12 block input'
+            spellcheck='false'
+            autocapitalize='off'
+            autocorrect='off'
+            type='text' />
+          <div id='toc'>
+            <ul class='list-reset h5 py1-ul'>
+              
+                
+                <li><a
+                  href='#banner'
+                  class="">
+                  Banner
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#buttons'
+                  class="">
+                  Buttons
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#buttonsfs'
+                  class="">
+                  ButtonsFs
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#card'
+                  class="">
+                  Card
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#checkoutform'
+                  class="">
+                  CheckoutForm
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#handlesubmit'
+                  class="">
+                  handleSubmit
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#cover'
+                  class="">
+                  Cover
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#coverfs'
+                  class="">
+                  CoverFs
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#visible'
+                  class="">
+                  VISIBLE
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#finddegree'
+                  class="">
+                  findDegree
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#usegradient'
+                  class="">
+                  useGradient
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#gradientborder'
+                  class="">
+                  GradientBorder
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#nav'
+                  class="">
+                  Nav
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#toggle'
+                  class="">
+                  toggle
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#clickaway'
+                  class="">
+                  clickAway
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#gettoken'
+                  class="">
+                  getToken
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#logout'
+                  class="">
+                  logout
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#savetoken'
+                  class="">
+                  saveToken
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#context'
+                  class="">
+                  Context
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#row'
+                  class="">
+                  Row
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#sidebuttons'
+                  class="">
+                  SideButtons
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#sidebuttonsfs'
+                  class="">
+                  SideButtonsFs
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#swipeup'
+                  class="">
+                  SwipeUp
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#uploadsingle'
+                  class="">
+                  UploadSingle
+                  
+                </a>
+                
+                </li>
+              
+            </ul>
+          </div>
+          <div class='mt1 h6 quiet'>
+            <a href='https://documentation.js.org/reading-documentation.html'>Need help reading this?</a>
+          </div>
+        </div>
+      </div>
+      <div id='split-right' class='relative overflow-auto height-viewport-100'>
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='banner'>
+      Banner
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Le composant Banner affiche une bannière publicitaire avec une image.
+Il utilise la classe CSS 'banner' pour le style.</p>
+
+    <div class='pre p1 fill-light mt0'>new Banner()</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>&lt;<span class="hljs-title class_">Banner</span> /&gt;</pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='buttons'>
+      Buttons
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Le composant Buttons affiche des boutons pour contrôler la lecture audio,
+y compris le mode aléatoire, la musique précédente, lecture/pause, musique suivante,
+et la lecture en boucle.</p>
+
+    <div class='pre p1 fill-light mt0'>new Buttons()</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>&lt;<span class="hljs-title class_">Buttons</span> /&gt;</pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='buttonsfs'>
+      ButtonsFs
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Le composant Buttons affiche des boutons pour contrôler la lecture audio,
+y compris le mode aléatoire, la musique précédente, lecture/pause, musique suivante,
+et la lecture en boucle.</p>
+
+    <div class='pre p1 fill-light mt0'>new ButtonsFs()</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>&lt;<span class="hljs-title class_">Buttons</span> /&gt;</pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='card'>
+      Card
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Le composant Card affiche une carte représentant un album ou une playlist, avec son titre,
+sa couverture, et le nom de l'artiste associé (récupéré à partir de l'IdUser).</p>
+
+    <div class='pre p1 fill-light mt0'>new Card($0: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>, IdUser: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, Titre: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, Cover: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>$0</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
+	    
+          </div>
+          
+          <table class='mt1 mb2 fixed-table h5 col-12'>
+            <colgroup>
+              <col width='30%' />
+              <col width='70%' />
+            </colgroup>
+            <thead>
+              <tr class='bold fill-light'>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class='mt1'>
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>$0.IdUser</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>$0.Titre</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>$0.Cover</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+            </tbody>
+          </table>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>IdUser</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+	    Identifiant de l'utilisateur associé à l'album/playlist.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>Titre</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    Titre de l'album/playlist.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>Cover</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    Chemin vers l'image de la couverture de l'album/playlist.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>&lt;<span class="hljs-title class_">Card</span> <span class="hljs-title class_">IdUser</span>={<span class="hljs-number">1</span>} <span class="hljs-title class_">Titre</span>=<span class="hljs-string">&quot;Titre de l&#x27;album/playlist&quot;</span> <span class="hljs-title class_">Cover</span>=<span class="hljs-string">&quot;/chemin/vers/cover.jpg&quot;</span> /&gt;</pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='checkoutform'>
+      CheckoutForm
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Le composant CheckoutForm permet aux utilisateurs de saisir leurs informations de carte de crédit
+et de procéder au paiement en utilisant l'API Stripe.</p>
+
+    <div class='pre p1 fill-light mt0'>CheckoutForm</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>&lt;<span class="hljs-title class_">CheckoutForm</span> /&gt;</pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='handlesubmit'>
+      handleSubmit
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Gestionnaire de soumission du formulaire.</p>
+
+    <div class='pre p1 fill-light mt0'>handleSubmit(event: <a href="https://developer.mozilla.org/docs/Web/API/Event">Event</a>)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>event</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/API/Event">Event</a>)</code>
+	    Objet d'événement de formulaire.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='cover'>
+      Cover
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Le composant Cover affiche la couverture d'un album avec le titre et l'artiste associé.</p>
+
+    <div class='pre p1 fill-light mt0'>new Cover()</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>&lt;<span class="hljs-title class_">Cover</span> /&gt;</pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='coverfs'>
+      CoverFs
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Le composant Cover affiche la couverture d'un album avec le titre et l'artiste associé en fullscreen.</p>
+
+    <div class='pre p1 fill-light mt0'>new CoverFs()</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>&lt;<span class="hljs-title class_">Cover</span> /&gt;</pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='visible'>
+      VISIBLE
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Le composant DropDown affiche un menu déroulant avec une animation lorsqu'il apparaît
+ou disparaît. La propriété <code>visible</code> contrôle la visibilité du menu déroulant.</p>
+
+    <div class='pre p1 fill-light mt0'>VISIBLE</div>
+  
+    <p>
+      Type:
+      <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+    </p>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>visible</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>)</code>
+	    Indique si le menu déroulant est visible.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>children</span> <code class='quiet'>(ReactNode)</code>
+	    Contenu du menu déroulant.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>&lt;<span class="hljs-title class_">DropDown</span> visible={<span class="hljs-literal">true</span>}&gt;<span class="hljs-title class_">Contenu</span> du menu déroulant&lt;/<span class="hljs-title class_">DropDown</span>&gt;</pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='finddegree'>
+      findDegree
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Calcule l'angle en degrés par rapport au centre d'un élément.</p>
+
+    <div class='pre p1 fill-light mt0'>findDegree</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>element</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/HTML/Element">HTMLElement</a>)</code>
+	    L'élément par rapport auquel calculer l'angle.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>event</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/API/MouseEvent">MouseEvent</a>)</code>
+	    L'événement de la souris contenant les coordonnées.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code>:
+        L'angle en degrés par rapport au centre de l'élément.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='usegradient'>
+      useGradient
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Hook personnalisé qui applique une rotation de gradient en fonction du mouvement de la souris.</p>
+
+    <div class='pre p1 fill-light mt0'>useGradient(): React.RefObject</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>React.RefObject</code>:
+        La référence à l'élément DOM où appliquer le gradient.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='gradientborder'>
+      GradientBorder
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Composant qui applique une bordure de gradient basée sur le mouvement de la souris.</p>
+
+    <div class='pre p1 fill-light mt0'>GradientBorder</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>children</span> <code class='quiet'>(ReactNode)</code>
+	    Le contenu du composant avec bordure de gradient.
+
+          </div>
+          
+          <table class='mt1 mb2 fixed-table h5 col-12'>
+            <colgroup>
+              <col width='30%' />
+              <col width='70%' />
+            </colgroup>
+            <thead>
+              <tr class='bold fill-light'>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class='mt1'>
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>children.children</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+            </tbody>
+          </table>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>React.Element</code>:
+        Le composant avec bordure de gradient.
+
+      
+    
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>&lt;<span class="hljs-title class_">GradientBorder</span>&gt;
+  <span class="hljs-title class_">Contenu</span> du composant avec bordure de gradient.
+&lt;/<span class="hljs-title class_">GradientBorder</span>&gt;</pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='nav'>
+      Nav
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Le composant Nav représente la barre de navigation principale de l'application.
+Il inclut des liens vers différentes sections, un bouton de profil, un menu déroulant,
+et le lecteur audio.</p>
+
+    <div class='pre p1 fill-light mt0'>new Nav()</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>&lt;<span class="hljs-title class_">Nav</span> /&gt;</pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='toggle'>
+      toggle
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Fonction pour basculer l'état du menu déroulant.</p>
+
+    <div class='pre p1 fill-light mt0'>toggle</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='clickaway'>
+      clickAway
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Fonction appelée lors d'un clic en dehors du menu déroulant pour le fermer.</p>
+
+    <div class='pre p1 fill-light mt0'>clickAway</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='gettoken'>
+      getToken
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Récupération brut du token en localStorage()</p>
+
+    <div class='pre p1 fill-light mt0'>getToken(): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>:
+        
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='logout'>
+      logout
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Suppression du token du localStorage</p>
+
+    <div class='pre p1 fill-light mt0'>logout()</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='savetoken'>
+      saveToken
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Sauvegarde du token dans le localStorage</p>
+
+    <div class='pre p1 fill-light mt0'>saveToken(token: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>token</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='context'>
+      Context
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Le composant Player inclut une couverture d'album, des boutons de lecture, des boutons latéraux,
+et prend en charge le mode plein écran avec une fonctionnalité de glissement vers le haut.</p>
+
+    <div class='pre p1 fill-light mt0'>Context</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>&lt;<span class="hljs-title class_">Player</span> /&gt;</pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='row'>
+      Row
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Le composant Row affiche une rangée d'albums avec un titre et un lien "AFFICHER PLUS" redirigeant vers la bibliothèque.</p>
+
+    <div class='pre p1 fill-light mt0'>new Row(albumsArray: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>>): JSX.Element</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>albumsArray</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>>)</code>
+	    Un tableau d'objets représentant les albums à afficher dans la rangée.
+
+          </div>
+          
+          <table class='mt1 mb2 fixed-table h5 col-12'>
+            <colgroup>
+              <col width='30%' />
+              <col width='70%' />
+            </colgroup>
+            <thead>
+              <tr class='bold fill-light'>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class='mt1'>
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>albumsArray.albumsArray</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+            </tbody>
+          </table>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>JSX.Element</code>:
+        Composant Row avec une liste d'albums/playlist.
+
+      
+    
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>&lt;<span class="hljs-title class_">Row</span> albumsArray={[{ <span class="hljs-title class_">IdUser</span>: <span class="hljs-number">1</span>, <span class="hljs-title class_">Titre</span>: <span class="hljs-string">&#x27;Nom de l&#x27;</span>album<span class="hljs-string">&#x27;, Cover: &#x27;</span>url-de-la-couverture.<span class="hljs-property">jpg</span><span class="hljs-string">&#x27; }, ...]} /&gt;</span></pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='sidebuttons'>
+      SideButtons
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Le composant SideButtons affiche deux boutons, précédent et suivant dans le lecteur audio.</p>
+
+    <div class='pre p1 fill-light mt0'>new SideButtons(): JSX.Element</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>JSX.Element</code>:
+        Composant SideButtons avec deux boutons.
+
+      
+    
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>&lt;<span class="hljs-title class_">SideButtons</span> /&gt;</pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='sidebuttonsfs'>
+      SideButtonsFs
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Le composant SideButtonsFs affiche un bouton latéral en mode plein écran dans le lecteur audio.</p>
+
+    <div class='pre p1 fill-light mt0'>new SideButtonsFs(): JSX.Element</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>JSX.Element</code>:
+        Composant SideButtonsFs avec un bouton.
+
+      
+    
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>&lt;<span class="hljs-title class_">SideButtonsFs</span> /&gt;</pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='swipeup'>
+      SwipeUp
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Composant SwipeUp</p>
+
+    <div class='pre p1 fill-light mt0'>new SwipeUp(props: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>): JSX.Element</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>props</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
+	    Propriétés du composant.
+
+          </div>
+          
+          <table class='mt1 mb2 fixed-table h5 col-12'>
+            <colgroup>
+              <col width='30%' />
+              <col width='70%' />
+            </colgroup>
+            <thead>
+              <tr class='bold fill-light'>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class='mt1'>
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>props.visible</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></code>
+  </td>
+  <td class='break-word'><span>Indique si le composant est visible.
+</span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>props.setVisible</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">Function</a></code>
+  </td>
+  <td class='break-word'><span>Fonction pour définir la visibilité du composant.
+</span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>props.children</span> <code class='quiet'>ReactNode</code>
+  </td>
+  <td class='break-word'><span>Contenu à afficher dans le composant SwipeUp.
+</span></td>
+</tr>
+
+
+              
+            </tbody>
+          </table>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>JSX.Element</code>:
+        Composant SwipeUp.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='uploadsingle'>
+      UploadSingle
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Composant UploadSingle pour téléverser un seul fichier.</p>
+
+    <div class='pre p1 fill-light mt0'>new UploadSingle(props: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>): JSX.Element</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>props</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
+	    Propriétés du composant
+
+          </div>
+          
+          <table class='mt1 mb2 fixed-table h5 col-12'>
+            <colgroup>
+              <col width='30%' />
+              <col width='70%' />
+            </colgroup>
+            <thead>
+              <tr class='bold fill-light'>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class='mt1'>
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>props.file</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;File></code>
+  </td>
+  <td class='break-word'><span>Le fichier à téléverser
+</span></td>
+</tr>
+
+
+              
+            </tbody>
+          </table>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>JSX.Element</code>:
+        Composant UploadSingle
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+      </div>
+    </div>
+  <script src='assets/anchor.js'></script>
+  <script src='assets/split.js'></script>
+  <script src='assets/site.js'></script>
+</body>
+</html>
